@@ -1,0 +1,24 @@
+# workflows
+# Should have name
+name: Hello
+on: 
+  # pull_request: 
+  #   branches: main
+  # push:
+  #   branches: main
+  workflow_dispatch: 
+# job
+# shoud be inside the workflows
+jobs:
+  # say hello is first job 
+  say-hello:
+    # creates a ephermal container with ubuntu running
+    runs-on: ubuntu-latest
+    # that ephermal container has steps to run hence name that steps and use command run: to run tasks
+# steps
+# shoud be inside the job
+    steps:
+      - name: say hello to everyone
+        run: echo "Hello Dosto"
+# actions
+# shoud be inside the steps
