@@ -1,5 +1,5 @@
 # Program to check if a number is prime or not
-
+# commit ofr triiger
 num = 29
 
 # To take input from the user
