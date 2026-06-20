@@ -1,0 +1,26 @@
+name: CI-CD
+on: 
+  workflow_dispatch:
+
+jobs:
+  code:
+    runs-on: ubuntu-latest
+    steps:
+      - name: clone the code
+        run: echo "cloning the code"
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: build using docker
+        run: echo "building the docker image"
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: test the code
+        run: echo "testing the code"
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: deploy to server
+        run: echo "deploying code to server"
+        
