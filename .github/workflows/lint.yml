@@ -1,0 +1,21 @@
+# whenever someone chnge python code lintr will chek synatx, format identation is correct or not
+name: Auto Linter
+on: 
+  push:
+    paths: "*.py"
+
+jobs:
+  code:
+    runs-on: ubuntu-latest
+    steps:
+        # this step will automatically clone repo in runner
+      - name: checkout the code
+        uses: actions/checkout@v7
+        # this step will install linting tool
+      - name: Install Linter
+        run: pip install ruff
+      # - name: check syntax in py files
+      #   run: 
+      
+        
+      
