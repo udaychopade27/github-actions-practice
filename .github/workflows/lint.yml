@@ -14,8 +14,9 @@ jobs:
         # this step will install linting tool
       - name: Install Linter
         run: pip install ruff
-      # - name: check syntax in py files
-      #   run: 
+        # this stepp will run the linter
+      - name: check syntax in py files
+        run: ruff check .
       
         
       
